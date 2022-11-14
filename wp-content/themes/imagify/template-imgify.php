@@ -38,7 +38,7 @@ function home_content()
                                         <div class="cs_banner_desc"><?php the_content(); ?></div>
                                         <div class="cs_imagify_btn">
                                             <a class="wp-block-button__link wp-element-button" href="#">Get Started 
-                                                <img src="http://localhost/imagify/wp-content/uploads/2022/11/long-arrow-right.png" alt="">
+                                                <img src="<?php  echo get_stylesheet_directory_uri() ?>/images/long-arrow-right.png" alt="arrow">
                                             </a>
                                         </div>
                                     </div>
