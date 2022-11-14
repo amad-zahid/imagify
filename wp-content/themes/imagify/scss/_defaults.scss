@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Brandon Grotesque', sans-serif;
+    src: url('fonts/Brandon_reg.woff'),
+    url('fonts/Brandon_reg_it.woff'),
+    url('fonts/Brandon_med.woff'),
+    url('fonts/Brandon_bld.woff'),
+    url('fonts/Brandon_blk.woff'),
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+html, body{
+    overflow-x: hidden;
+}
+
+.site-inner{
+    background: #fff;
+}
+
+.cs_site_heading{
+    font-style: normal;
+    font-weight: 450;
+    font-size: 40px;
+    letter-spacing: -0.005em;
+    line-height: 48px;
+    color: #343A49;
+}
+
+.cs_site_heading_desc{
+    font-family: $secondary_font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #626E7B;
+    padding-top: 1rem;
+}
+
+.imgify_row{
+    padding: 0px;
+    gap: 1em;
+}
+
+
+.cs_imagify_btn{
+    position: relative;
+    display: inline-block;
+    .wp-block-button__link{
+        display: inline-block;
+        box-shadow: 0px 6px 0px 0px #3694ae;
+        width: 207px;
+        height: 58px;
+        background: #40B1D0;
+        border-radius: 4px;
+        margin-top: 48px;
+        transform: translateY(0px);
+        font-family: $secondary_font;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: #fff;
+        i{
+            padding-left: 1rem;
+        }
+        img{
+            display: inline-block;
+            padding-left: 1rem;
+            transform: translateY(-3px);
+        }
+    }
+    &:hover{
+        .wp-block-button__link{
+            color: #fff;
+            transform: translateY(2px);
+            box-shadow: 0px 3px 0px 0px #3694ae;
+            background: #35a4c3;
+        }
+    }
+}
+
+.site-footer p{
+    font-family: $secondary_font;
+    color: #343A49;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+@media (max-width: 1260px) and (min-width: 1140px) {
+    .wrap{
+        max-width: 1140px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .cs_site_heading{
+        font-size: 32px;
+        line-height: 40px;
+        // font-weight: 600;
+    }
+    
+    .cs_imagify_btn{
+        .wp-block-button__link{
+            width: auto;
+            font-size: 16px;
+            height: auto;
+            margin-top: 32px;
+        }
+    }
+
+    .main_spacer{
+        height: 75px !important;
+    }
+    .sub_spacer{
+        height: 42px !important;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .cs_site_heading{
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .cs_imagify_btn{
+        .wp-block-button__link{
+            font-size: 14px;
+            margin-top: 32px;
+            padding: 1rem 2rem;
+        }
+    }
+
+    .site-footer p{
+        font-size: 14px;
+    }
+}
+

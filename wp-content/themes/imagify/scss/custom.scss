@@ -1,0 +1,14 @@
+// @import 'preBuilt';
+@import 'conf';
+@import 'defaults';
+@import 'header';
+@import 'banner';
+@import 'visitors';
+@import 'reviews';
+@import 'testi';
+
+body{
+    font-family: $secondary_font;
+    background-color: red;
+    color: #fff;
+}

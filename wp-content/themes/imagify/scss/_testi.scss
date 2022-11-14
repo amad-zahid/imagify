@@ -1,0 +1,132 @@
+@import 'conf';
+
+.testi_card{
+    position: relative;
+    padding: 80px;
+    gap: 48px;
+    width: 100%;
+    height: 370px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: all .3s ease-in-out;
+    *{
+        transition: all .3s ease-in-out;
+    }
+    .text_area{
+        position: relative;
+        padding-left: 4rem;
+        .testi_text{
+            font-family: $secondary_font;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            color: #343A49;
+            margin-bottom: 40px;
+            transition: all .3s ease-in-out;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            left: -50px;
+            top: 0px;
+            background-image: url(../images/quote-2.png);
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: left top;
+            transition: all .3s ease-in-out;
+        }
+    }
+    .testier{
+        gap: 1.5em;
+        margin-bottom: 0px;
+        .testier_title{
+            font-family: $secondary_font;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 26px;
+            color: #343A49;
+        }
+        .testier_position{
+            font-family: $secondary_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0.01em;
+            color: #343A49;
+        }
+    }
+    &:hover{
+        *{
+            transition: all .3s ease-in-out;
+        }
+        background: #3694AE;
+        .text_area{
+            .testi_text{
+                color: #FFFFFF;
+            }
+            &::before{
+                background-image: url(../images/quote.png);
+            }
+        }
+        .testier{
+            .testier_title, .testier_position{
+                color: #FFFFFF;
+            }
+        }
+        &+.testi_card{
+            background: #F4F7F9;
+        }
+    }
+    &.active{
+        background: #3694AE;
+        .text_area{
+            .testi_text{
+                color: #FFFFFF;
+            }
+            &::before{
+                background-image: url(../images/quote.png);
+            }
+        }
+        .testier{
+            .testier_title, .testier_position{
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .testi_card{
+        padding: 48px;
+        height: auto;
+        .text_area{
+            .testi_text{
+                font-size: 18px;
+                margin-bottom: 24px;
+            }
+            &::before{
+                width: 50px;
+                height: 50px;
+                background-size: contain;
+                left: -30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 782px) {
+    .testi_card{
+        background: #F4F7F9;
+        .text_area{
+            padding-left: 0px;
+            &::before{
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+@import 'conf';
+
+.review_card{
+    padding-right: 24px;
+    .review_text{
+        font-family: $secondary_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: #343A49;
+        margin-bottom: 1rem;
+        &::first-line{
+            background-image: url('../images/Icon.png');
+            background-position: left;
+            background-repeat: no-repeat;
+        }
+        span{
+            display: inline-block;
+            width: 20px;
+        }
+    }
+    .reviewer{
+        gap: 0px;
+        .reviewer_image{
+            position: relative;
+        }
+        .reviewer_title{
+            font-family: $secondary_font;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 26px;
+            color: #0C0F1F;
+        }
+        .reviewer_position{
+            font-family: $secondary_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0.01em;
+            color: #4A5362;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .review_card{
+        .review_text{
+            
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .review_card{
+        padding-right: 24px;
+    }
+}
